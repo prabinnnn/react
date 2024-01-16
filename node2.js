@@ -6,5 +6,4 @@ const hasedpw = encript("password");
 const compare = (string, hash) => {
   return bcryptjs.compareSync(string, hash);
 };
-const prabin = compare("password", hasedpw);
-console.log({ prabin });
+console.log(compare("password", hasedpw));
