@@ -1,9 +1,11 @@
+const { hash } = require("bcrypt");
 const bcryptjs = require("bcryptjs");
-const encriptpw = (string) => {
-  return bcryptjs.hashsync(string, 10);
+const encript = (string) => {
+  return bcryptjs.hashSync(string, 10);
 };
-const hashedpw = encriptpw("password");
-const comparePW = (string, hash) => {
+const hasedpw = encript("password");
+const compare = (string, hash) => {
   return bcryptjs.compareSync(string, hash);
 };
-comparePW("passwrod", hashedpw);
+const prabin = compare("ihaswhded", hasedpw);
+console.log({ prabin });
