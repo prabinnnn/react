@@ -4,8 +4,8 @@ const data = {
   email: "bhanbshd@gmail.com",
   age: 26,
 };
-let datastring = json.stringify(data);
-QRCode.toDataURL(datastring, function (err, url) {
+let dataString = JSON.stringify(data);
+QRCode.toDataURL(dataString, function (err, url) {
   if (err) {
     console.log(err);
   } else {
