@@ -1,5 +1,7 @@
 const CC = require("currency-converter-lt");
+
 let currencyConverter = new CC();
+
 currencyConverter
   .from("USD")
   .to("GBP")
@@ -7,4 +9,7 @@ currencyConverter
   .convert()
   .then((response) => {
     console.log(response);
+  })
+  .catch((error) => {
+    console.error(error);
   });
