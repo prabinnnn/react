@@ -1,9 +1,8 @@
-const libarary = require("");
-let sum = libarary.sum((a, b) => {
+let sum = (a, b) => {
   return a + b;
-});
-let mul = libarary.mul((a, b) => {
+};
+let mul = (a, b) => {
   return a * b;
-});
+};
 
 module.exports = { sum, mul };
